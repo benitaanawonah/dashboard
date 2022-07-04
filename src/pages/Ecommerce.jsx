@@ -19,7 +19,7 @@ const Ecommerce = () => {
           <div className='flex justify-between items-center'>
             <div>
               <p className='font-bold text-grey-400'>Earnings</p>
-              <p className='text-2xl'>£85,465.00</p>
+              <p className='text-2xl'>₦105,465.00</p>
             </div>
 
           </div>
@@ -89,7 +89,7 @@ const Ecommerce = () => {
             <div className='border-r-1 border-color m-4 pr-10'>
               <div>
                 <p>
-                  <span className='text-3xl font-semibold'>$93,438</span>
+                  <span className='text-3xl font-semibold'>₦86,438</span>
                   <span className='p-1.5 hover:drop-shadow-xl cursor-pointer
                   rounded-full text-white bg-green-400 ml-3 text-xs'>23%</span>
                 </p>
@@ -101,7 +101,7 @@ const Ecommerce = () => {
 
              <div className='mt-8'>
                 <p>
-                  <span className='text-3xl font-semibold'>$48,438</span> 
+                  <span className='text-3xl font-semibold'>₦50,438</span> 
                 </p>
                 <p className='text-gray-500 mt-1'>
                   Expense
