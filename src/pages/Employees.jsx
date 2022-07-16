@@ -4,7 +4,7 @@ import { GridComponent, ColumnsDirective, ColumnDirective, Page, Search, Inject,
 import { employeesData, employeesGrid } from '../data/dummy';
 
 import { Header } from '../components';
-import { SearchWidgetInfo } from '@syncfusion/ej2/documenteditor';
+
 
 
 const Employees = () => {

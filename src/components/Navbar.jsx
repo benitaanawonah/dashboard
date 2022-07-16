@@ -27,8 +27,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor}) => (
 
 
 const NavBar = () => {
-  const { activeMenu, setActiveMenu, isClicked, setisClicked, 
-    handleClick, screenSize, setscreenSize, currentColor } = useStateContext();
+  const { setActiveMenu, isClicked, handleClick, screenSize, setscreenSize, currentColor } = useStateContext();
    
     //sidebar resizing so as to not cover the whole screen on a smaller device
     useEffect(() => {
@@ -41,7 +40,7 @@ const NavBar = () => {
 
       return () => window.removeEventListener('resize', handleResize);
 
-    }, []);
+    }, [setscreenSize]);
 
     useEffect(() => {
       if(screenSize <= 900) {
@@ -49,7 +48,7 @@ const NavBar = () => {
       } else {
         setActiveMenu(true)
       }
-    }, [screenSize]);
+    }, [screenSize, setActiveMenu]);
 
 
   //Navbar headings 
@@ -90,7 +89,7 @@ const NavBar = () => {
             hover:bg-light-gray rounded-lg'
             onClick={() => handleClick
             ('userProfile')}>
-              <img className='rounded-full w-8 h-8' src={avatar}/>
+              <img className='rounded-full w-8 h-8' src={avatar} alt='avatar' />
               <p>
                 <span className='text-grey-400 text-14'>
                   Hi, </span> {''}
